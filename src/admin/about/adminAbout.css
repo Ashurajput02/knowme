@@ -1,0 +1,29 @@
+.admin-about{
+    text-align: center;
+    height: 100vh;
+}
+.admin-about-save-btn{
+    height: 55px;
+    width: 150px;
+    justify-content: center;
+}
+.admin-about-container{
+    display: flex;
+    justify-content: center;
+}
+.admin-about-title span{
+    color:var(--first-color)
+}
+.admin-about-list{
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media screen and (max-width:576px) {
+    .admin-about-list{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0;
+    }
+    .admin-about-save-btn{
+        height: 35px;
+    }
+}

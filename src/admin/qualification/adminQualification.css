@@ -1,0 +1,95 @@
+.admin-qualification{
+    text-align: center;
+    min-height: 100vh;
+}
+.admin-qualification-container{
+    display: flex;
+    justify-content: center;
+}
+.admin-qualification-list{
+    grid-template-columns: repeat(5,1fr);
+}
+.admin-qualification-new{
+    grid-template-columns: repeat(5,2fr);
+}
+.admin-qualification-edit-btn,
+.admin-qualification-delete-btn,
+.admin-qualification-add-btn,
+.admin-qualification-reset-btn{
+    margin-left: auto;
+    margin-right: auto; 
+    height: 55px;
+    width: 150px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.admin-qualification-single-item{
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+}
+.admin-qualification-title span{
+    color:var(--first-color)
+}
+
+@media screen and (max-width:992px) {
+    .admin-qualification-edit-btn,
+    .admin-qualification-delete-btn,
+    .admin-qualification-add-btn,
+    .admin-qualification-reset-btn{
+        height: 55px;
+        width: 100px;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .admin-qualification-list{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .admin-qualification-new{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .admin-qualification-edit-btn,
+    .admin-qualification-delete-btn,
+    .admin-qualification-add-btn,
+    .admin-qualification-reset-btn{
+        height: 55px;
+        width: 200px;
+        margin-top: -1rem;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .admin-qualification-single-item{
+        display: flex;
+        justify-content: center;
+        grid-column: span 3;
+    }
+}
+@media screen and (max-width:576px) {
+    .admin-qualification-list{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0rem;
+    }
+    .admin-qualification-new{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 0rem;
+    }
+    .admin-qualification-edit-btn,
+    .admin-qualification-delete-btn,
+    .admin-qualification-add-btn,
+    .admin-qualification-reset-btn{
+        height: 35px;
+        width: 120px;
+        margin-top: 1rem;
+        margin-left: 5px;
+        margin-right: 5px; 
+    }
+    .admin-qualification-single-item{
+        display: flex;
+        justify-content: center;
+        grid-column: span 1;
+    }
+}
