@@ -17,13 +17,13 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' ? "https://portfolio-nine-sable-21.vercel.app" : "http://localhost:3000",
+    origin: process.env.NODE_ENV === 'production' ? "https://knowme-vert.vercel.app/" : "http://localhost:3000",
     credentials: true
 }));
 app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/user/', userRoutes);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
